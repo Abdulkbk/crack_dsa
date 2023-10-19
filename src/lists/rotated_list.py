@@ -16,3 +16,13 @@ def count_rotations(nums):
         else:
             return len(arr)
     return len(arr)
+
+
+def count_rotations2(nums):
+    posiiton = 0
+
+    while posiiton < len(nums):
+        if posiiton > 0 and nums[posiiton] < nums[posiiton - 1]:
+            return posiiton
+        posiiton += 1
+    return posiiton
