@@ -26,3 +26,10 @@ def count_rotations2(nums):
             return posiiton
         posiiton += 1
     return posiiton
+
+
+if __name__ == "__main__":
+    crack = count_rotations([3, 4, 5, 1, 2])
+    print(f"Numbers of rotations: {crack}")
+    crack2 = count_rotations([4, 5, 6, 7, 1, 2, 3])
+    print(f"Numbers of rotations: {crack2}")
